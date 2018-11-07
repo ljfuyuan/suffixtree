@@ -2,7 +2,7 @@
 A Go implementation of a Generalized Suffix Tree using Ukkonen's algorithm
 
 The package just translate from Alessandro Bahgat Shehata's java version to golang and do some optimization  
-for more details, you should look at [abahgat/suffixtree](https://github.com/abahgat/suffixtree/) 
+For more details, you should look at [abahgat/suffixtree](https://github.com/abahgat/suffixtree/) 
 
 ## Usage
 
