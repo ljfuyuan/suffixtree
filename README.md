@@ -21,11 +21,11 @@ func main() {
 	for k, word := range words {
 		tree.Put(word, k)
 	}
-	indexs := tree.Search("a", -1)
+	indexes := tree.Search("a", -1)
 
-	fmt.Println(indexs)
+	fmt.Println(indexes)
 	//[0 2 1]
-	for _, index := range indexs {
+	for _, index := range indexes {
 		fmt.Println(words[index])
 	}
 	//banana

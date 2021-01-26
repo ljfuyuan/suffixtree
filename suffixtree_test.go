@@ -11,20 +11,20 @@ func TestSuffixTree(t *testing.T) {
 	for k, word := range words {
 		tree.Put(word, k)
 	}
-	indexs := tree.Search("a", -1)
+	indexes := tree.Search("a", -1)
 
-	if len(indexs) != 3 {
-		t.Error("indexs len should be 3,but ", len(indexs))
+	if len(indexes) != 3 {
+		t.Error("indexes len should be 3,but ", len(indexes))
 	}
-	fmt.Println(indexs)
-	for _, index := range indexs {
+	fmt.Println(indexes)
+	for _, index := range indexes {
 		fmt.Println(words[index])
 	}
 
-	indexs = tree.Search("文", 0)
+	indexes = tree.Search("文", 0)
 
-	if len(indexs) != 1 && indexs[0] != 2 {
-		t.Error("indexs len should be 1 and indexs[0] must be 2,but ", len(indexs))
+	if len(indexes) != 1 && indexes[0] != 2 {
+		t.Error("indexes len should be 1 and indexes[0] must be 2,but ", len(indexes))
 	}
 
 	printnode("\t", tree.root)
